@@ -13,23 +13,23 @@ context += prompt("Org Name:", "org-name", #{
     ],
 });
 
-context += prompt("Venture Name:", "venture-name", #{
-    help: "Joint Venture Name",
+context += prompt("Solution Name:", "solution-name", #{
+    help: "Solution Name",
     cases: [
         CasedIdentityCasedValue(PROGRAMMING_CASES),
-        FixedKeyCasedValue("venture-title", TitleCase),
+        FixedKeyCasedValue("solution-title", TitleCase),
     ],
 });
 
-context += set("org-venture-name", render("{{ org-name }}-{{ venture-name }}", context), #{
+context += set("org-solution-name", render("{{ org-name }}-{{ solution-name }}", context), #{
     cases: [
         CasedIdentityCasedValue(PROGRAMMING_CASES),
-        FixedKeyCasedValue("org-venture-title", TitleCase),
+        FixedKeyCasedValue("org-solution-title", TitleCase),
     ],
 });
 
 if switch_enabled("debug-context") {
-    log(Info, `${archetect::archetype::description()} (${context["org-venture-name"]}) Context:`);
+    log(Info, `${archetect::archetype::description()} (${context["org-solution-name"]}) Context:`);
     display(as_yaml(context));
 }
 

@@ -1,4 +1,4 @@
-# Prompts for Organization and Venture
+# Prompts for Organization and Solution
 
 This is an [Archetect](https://archetect.github.io/) archetype.
 
