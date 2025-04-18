@@ -7,7 +7,7 @@ This is an [Archetect](https://archetect.github.io/) archetype.
 To generate content from this Archetype, copy and execute the following command:
 
 ```sh
-  archetect render https://github.com/p6m-dev/org-prompts.archetype
+  archetect render https://github.com/p6m-archetypes/org-prompts.archetype
 ```
 
 ## Archetype Layout
